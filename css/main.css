@@ -119,6 +119,8 @@ header nav ul li a {
 .section-two,
 .section-three {
 	box-sizing: border-box;
+	/* border-top: 5px solid #EEE; */
+	/* border-bottom: 5px solid #eee; */
 }
 
 .section-one {
@@ -158,12 +160,80 @@ header nav ul li a {
 footer {
 	display: flex;
 	justify-content: center;
-	margin-top: 8px;
+	width: 100%;
+	margin: 8px 0px;
 }
 
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #45610E;
-	font-size: .875em;
+	font-size: .875rem;
+}
+
+
+
+
+/***********************MEDIA QUERIES**************************/
+
+
+@media all and (min-width: 768px) {
+	/**********TABLET STYLES***********/
+
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+	.section-one {
+		/* width: 100%; */
+		width: 30%;
+		padding: 0px 30px;
+	}
+	
+	.section-two {
+		/* width: 100%; */
+		width: 40%;
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #eee;
+		border-bottom: none;
+		border-top: none;
+		padding: 0px 30px;
+	}
+	
+	.section-three {
+		/* width: 100%; */
+		width: 30%;
+		padding: 0px 30px;
+	}
+}
+
+
+@media all and (min-width: 1200px) {
+	/*******DESKTOP STYLES********/
+
+	body {
+		font-size: 1em;
+	}
+
+	header .content-wrapper {
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px;
+	}
+	header h1 {
+		width: 24%;
+		padding: 38px 0px 20px 0px;
+		border-bottom: none;
+		text-align: left;
+		align-items: center;
+	}
+	header nav {
+		width: 21%;
+		padding: 38px 0px 20px 0px;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+	}
 }
